@@ -450,6 +450,15 @@ section {
   transform: scale(1);
 }
 
+/*Contact Section*/
+.contact-content-con {
+  display: flex;
+  padding-top: 3.5rem;
+}
+.contact-content-con .left-contact {
+  flex: 2;
+}
+
 /*independent-components*/
 .btn-con {
   display: flex;
