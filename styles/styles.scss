@@ -20,6 +20,20 @@
     --br-sm-2: 14px;
     --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
   }
+
+  .light-mode{
+    --color-primary: #FFFFFF;
+    --color-secondary: #c566f5;
+    --color-white: #454e56;
+    --color-black: #000;
+    --color-grey0: #f8f8f8;
+    --color-grey-1: #6c7983;
+    --color-grey-2: #b2becd;
+    --color-grey-3: #6c7983;
+    --color-grey-4: #6c7983;
+    --color-grey-5: #454e56;
+    --color-grey-6: #12181b;
+  }
   
   body {
     background-color: var(--color-primary);
@@ -114,28 +128,51 @@
 
     }
     .control{
-        padding: 1rem;
-        cursor: pointer;
-        background-color: var(--color-grey-4);
-        width: 55px;
-        height: 55px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        margin: .7rem 0;
-        box-shadow: var(--box-shadow-1);
-        i{
-            font-size: 1.2rem;
-            color: var(--color-grey-2);
-            pointer-events: none;
-        }
-
-
+      padding: 1rem;
+      cursor: pointer;
+      background-color: var(--color-grey-4);
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      margin: .7rem 0;
+      box-shadow: var(--box-shadow-1);
+      i{
+        font-size: 1.2rem;
+        color: var(--color-grey-2);
+        pointer-events: none;
+      }
+    }
+  }
+  .theme-btn{
+    top: 5%;
+    right: 3%;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: var(--color-grey-4);
+    cursor: pointer;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 15px rgba(0,0,.3);
+    transition: all .1s ease-in-out;
+    &:active{
+      transform: translateY(-5px)
+    }
+    i{
+      font-size: 1.4rem;
+      color: var(--color-grey-2);
+      pointer-events: none;
     }
 
   }
+
+  
 
   /*header-content*/
   .header-content{
@@ -638,7 +675,8 @@
         z-index: -1;
         transform: translate(-50%,-50%);
         font-weight: 800;
-        font-size: 6.3rem;
+        font-size: 5rem;
+        opacity: 30%;
       }
     }
    }
